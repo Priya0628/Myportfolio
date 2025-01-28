@@ -1,0 +1,129 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 10%;
+}
+.nav-menu{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  font-size: 22px;
+}
+.nav-connect {
+  padding: 15px 20px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  user-select: none; /* Prevent text selection on click */
+  position: relative; /* Needed for pseudo-elements or shadow behavior */
+}
+
+.nav-connect:hover {
+  transform: scale(1.1); /* Slightly enlarge the button */
+  box-shadow: 0 8px 15px rgba(186, 35, 225, 0.4); /* Add a subtle shadow */
+  background: linear-gradient(267deg, #B923E1 0.36%, #DA7C25 102.06%); /* Reverse the gradient */
+}
+
+.nav-connect:active {
+  transform: scale(1); /* Prevent overscaling on click */
+  box-shadow: 0 4px 10px rgba(186, 35, 225, 0.4); /* Slightly smaller shadow */
+}
+
+/* Make the shadow area clickable */
+.nav-connect::after {
+  content: "";
+  position: absolute;
+  top: -10px; /* Extend the clickable area above */
+  bottom: -10px; /* Extend the clickable area below */
+  left: -10px; /* Extend the clickable area to the left */
+  right: -10px; /* Extend the clickable area to the right */
+  border-radius: 50px; /* Ensure the shadow remains rounded */
+  z-index: -1; /* Place the shadow below the button */
+}
+
+
+.logo {
+  width: 120px; /* Increased width */
+  height: 120px; /* Increased height */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+ 
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add subtle shadow on hover */
+}
+
+
+
+.nav-menu li{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.anchor-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-menu li:hover .anchor-link {
+  color: #ffcc00; /* Change color on hover */
+}
+.nav-mob-close{
+  display: none;
+  cursor: pointer;
+}
+.nav-mob-open{
+  display: none;
+  cursor: pointer;
+  width: 30px;
+}
+@media(max-width:768px){
+  .navbar{
+      margin: 20px 6%;
+  }
+  .nav-connect{
+      display: none;
+  }
+  .nav-mob-open{
+      display: block;
+      position: absolute;
+      right: 30px;
+  }
+  .nav-mob-close{
+      display: block;
+      position: absolute;
+      top: 30px;
+      right: 7%;
+      width: 30px;
+  }
+  .navbar ul{
+      position: fixed;
+      flex-direction: column;
+      align-items: start;
+      top: 0;
+      gap: 30px;
+      background-color: #1F0016;
+      width: 300px;
+      height: 100%;
+      z-index: 2;
+      transition: right 0.5s;
+      right: -300px;
+      padding-top: 100px;
+  }
+  .nav-menu li{
+      font-size: 22px;
+      padding-left: 50px;
+      flex-direction: row;
+      gap: 20px;
+  }
+}

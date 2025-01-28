@@ -1,0 +1,86 @@
+/* General Styles */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+
+.skills-title {
+  position: relative;
+  text-align: center; /* Center-align the title and image */
+}
+
+.skills-title h1 {
+  padding: 0px 30px;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px; /* Add space between the title and the image */
+}
+
+.skills-title img {
+  position: absolute; 
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly with space between */
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 20px; /* Space between items */
+  max-width: 1000px; /* Prevent grid from becoming too wide */
+  margin: 0 auto; /* Center the grid in the container */
+}
+
+
+/* Skill Item */
+.skill-item {
+  
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Skill Logo */
+.skill-logo {
+  width: 90px; /* Increase width */
+  height: 90px; /* Increase height */
+  margin-bottom: 10px;
+  object-fit: contain; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+.skill-logo1{
+  width: 100px; /* Increase width */
+  height: 125px; /* Increase height */
+  margin-bottom: 10px;
+  object-fit: contain; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.skill-item:hover .skill-logo {
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Skill Name */
+.skill-item p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+}

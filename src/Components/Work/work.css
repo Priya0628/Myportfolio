@@ -1,0 +1,100 @@
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+
+
+
+.work-title {
+  position: relative;
+  text-align: center; /* Center-align the title and image */
+}
+
+.work-title h1 {
+  padding: 0px 30px;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px; /* Add space between the title and the image */
+}
+
+.work-title img {
+  position: absolute; 
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.work-format{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.work-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+.work-format h3{
+  font-size: 28px;
+  font-weight: 500;
+}
+.hover-text {
+  font-size: 1rem;
+  color: #2ECC71;
+  font-style: italic;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.work-format:hover .hover-text {
+  opacity: 1; /* Make the text visible on hover */
+}
+
+
+.work-format h2{
+  font-size:32px;
+  font-weight:500;
+  background: linear-gradient(270deg, #DF8909 10%, #B415FF 100%); /* Gradient color */
+  -webkit-background-clip: text; /* Clips the background to the text */
+  -webkit-text-fill-color: transparent;
+}
+.services-format p{
+  color: #d4d4d4;
+  font-size: 30px;
+  line-height: 40px;
+  max-width: 300px;
+}
+@media(max-width:768px){
+  .mywork{
+      gap: 50px;
+      margin: 50px 6%;
+      align-items: start;
+  }
+  
+  .mywork-container{
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+  }
+  .mywork-showmore{
+      padding: 15px 30px;
+      font-size: 16px;
+      margin: 10px auto;
+     
+  }
+  .mywork-showmore:hover{
+      gap: 20px;
+  }
+}
