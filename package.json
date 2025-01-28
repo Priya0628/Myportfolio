@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Priya0628/Myportfolio.git",
+  "homepage": "https://Priya0628.github.io/Myportfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
