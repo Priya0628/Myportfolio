@@ -1,6 +1,8 @@
 import React from 'react'
 import './Hero.css'
 import hello from '../../assets/hello.png';
+import resume from '../../assets/Padma_Priya_Resume.pdf';
+
 const hero = () => {
   return (
     <div id='home' className='hero'>
@@ -15,7 +17,7 @@ const hero = () => {
   onClick={() => {
     // Trigger the file download
     const link = document.createElement("a");
-    link.href = "/Padma_Priya_Resume.pdf"; // Path to the resume file
+    link.href = resume; // Path to the resume file 
     link.download = "Padma_Priya_Resume.pdf"; // The file name for the downloaded file
     document.body.appendChild(link);
     link.click();

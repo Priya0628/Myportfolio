@@ -74,7 +74,6 @@ const Navbar = () => {
     Contact
   </AnchorLink>
 </li>
-
       </ul>
       <div
   className="nav-connect"
