@@ -4,16 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://github.com/Priya0628/Myportfolio.git",
-
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "lint": "eslint .",
-  "preview": "vite preview",
-  "predeploy": "vite build", // Builds the app before deploying
-  "deploy": "gh-pages -d dist" // Deploys the app using gh-pages
-},
-
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "emailjs-com": "^3.2.0",
     "react": "^18.3.1",
